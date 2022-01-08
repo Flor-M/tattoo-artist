@@ -1,0 +1,44 @@
+body {
+    margin: 0%;
+}
+@font-face {
+    font-family: "robotos-regular";
+    src: url(./assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf)
+}
+li {
+    list-style: none;
+}
+header {
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+}
+.logo {
+    width: 8%;
+}
+.nav-container {
+    width: 100vw;
+    position: fixed;
+    margin-left: 1%;
+}
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+    padding: 0%;
+}
+.nav-item {
+    margin-top: 1%;
+}
+.nav-list a {
+    text-decoration: none;
+    color: rgb(236, 226, 207);
+    font-family: "robotos-regular";
+}
+.atribution-logo {
+    font-size: 1rem;
+    color: rgba(239, 223, 195, 0.322);
+}
+.header-img {
+    width: 100%;
+}
