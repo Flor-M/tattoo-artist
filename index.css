@@ -1,17 +1,30 @@
 body {
+    width: 100vw;
     margin: 0%;
+    background-color: rgb(243, 236, 221);
 }
 @font-face {
-    font-family: "robotos-regular";
+    font-family: "robotoslab-regular";
     src: url(./assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf)
+}
+@font-face {
+    font-family: "roboto-regular";
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf)
+}
+@font-face {
+    font-family: "roboto-light";
+    src: url(./assets/fonts/Roboto/Roboto-Light.ttf)
+}
+@font-face {
+    font-family: "tattoo";
+    src: url(./assets/fonts/Tattoo/Rooters.ttf)
 }
 li {
     list-style: none;
 }
 header {
     width: 100vw;
-    height: 80vh;
-    overflow: hidden;
+    height: 100vh;
 }
 .logo {
     width: 8%;
@@ -32,13 +45,83 @@ header {
 }
 .nav-list a {
     text-decoration: none;
-    color: rgb(236, 226, 207);
-    font-family: "robotos-regular";
+    color: rgb(243, 236, 221);
+    font-family: "robotoslab-regular";
 }
 .atribution-logo {
     font-size: 1rem;
     color: rgba(239, 223, 195, 0.322);
 }
 .header-img {
-    width: 100%;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+}
+h1 {
+    text-align: center;
+    text-decoration: none;
+    margin: 3rem 0rem;
+    font-size: 3rem;
+    font-family: "tattoo";
+    color: rgb(0, 0, 0);
+}
+
+
+.gallery-container {
+    background-color: rgb(0, 0, 0);
+}
+.gallery-img {
+    width: 33%;
+    transition: 0.5s opacity;
+}
+.gallery-container:hover .gallery-img {
+    opacity: 0.5;
+}
+.gallery-container:hover .gallery-img:hover {
+    opacity: 1;
+}
+.como-container {
+    padding: 4rem 0rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "roboto-regular";
+}
+.comos4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.como {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 2.5rem;
+}
+.icono-como {
+    height: 7rem;
+}
+.como h3 {
+    text-transform: uppercase;
+}
+.como p {
+    font-family: "roboto-light";
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0rem;
+}
+.consulta-btn {
+    width: 40rem;
+    height: 5rem;
+    border: none;
+    font-family: "roboto-regular";
+    font-size: 1.2rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(243, 236, 221);
 }
