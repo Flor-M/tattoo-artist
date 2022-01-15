@@ -38,6 +38,9 @@ header {
     justify-content: space-between;
     background-color: black;
 }
+#menu {
+    display: none;
+}
 .nav-list {
     width: 51%;
     display: flex;
@@ -75,8 +78,6 @@ h1 {
     font-family: "tattoo";
     color: rgb(0, 0, 0);
 }
-
-
 .gallery-container {
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -84,11 +85,10 @@ h1 {
     justify-content: center;
     height: auto;
     flex-wrap: wrap;
-    flex-direction: row;
     padding: 2% 0%;
 }
 .gallery-img {
-    height: 15rem;
+    height: 15.3rem;
     transition: 0.5s opacity;
     padding: 1%;
 }
@@ -98,21 +98,24 @@ h1 {
 .gallery-container:hover .gallery-img:hover {
     opacity: 1;
 }
-.como-container {
-    padding: 4rem 0rem;
+/* .como-container {
+    background-color: rgba(201, 152, 73, 0.13);
+} */
+.como-container, .porque-container {
+    padding: 3rem 0rem 4rem 0rem;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     font-family: "roboto-regular";
 }
-.comos4 {
+.comos4, .porque3 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin-top: 1.5rem;
 }
-.como {
+.como, .porque{
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -120,34 +123,101 @@ h1 {
     text-align: center;
     padding: 0rem 2.5rem;
 }
-.icono-como {
-    height: 7rem;
-    color: rgb(118, 142, 93);
+.titulo-como, .titulo-porque {
+    font-size: 2rem;
+}
+.numero-como {
+    font-family: "tattoo";
+}
+.numero-como, .icono-porque {
+    font-size: 5rem;
 }
 .como h3 {
-    text-transform: uppercase;
+    font-size: 1.4em;
 }
-.como p {
+.como p, .porque p {
     font-family: "roboto-light";
+    font-size: 1.3rem;
+    margin: 0.2rem;
 }
-.btn-container {
+.btn-container-turno, .btn-container {
     display: flex;
     justify-content: center;
-    margin: 4rem 0rem;
+    padding: 4rem 0rem;
+    background-color: rgba(0, 0, 0);
 }
-.consulta-btn {
+.turno-btn, .consulta-btn {
     width: 40rem;
     height: 5rem;
     border: none;
-    font-family: "roboto-regular";
+    font-family: "robotoslab-regular";
     font-size: 1.5rem;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition-duration: 0.3s;
+}
+.turno-btn:hover, .consulta-btn:hover {
+    cursor: pointer;
+    background-color: rgb(201, 151, 73);
+    color: rgb(255, 255, 255);
+}
+.porque {
+    background-color: rgba(201, 152, 73, 0.11);
+    margin: 1rem 3rem;
+    padding: 4rem 0.2rem 0.2rem 0rem;
+    height: 20rem;
+    justify-content: flex-start;
+}
+.porque p {
+    font-family: "roboto-regular";
+}
+.icon-container {
+    height: 9rem;
+    width: 9rem;
+    background-color: rgba(201, 152, 73, 0.26);
+    border-radius: 50%;
+    display: flex;
+    margin-bottom: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+.icono-porque {
+    color: rgb(201, 151, 73);
+}
+/* .dollar-container {
+    background-color: rgba(201, 152, 73, 0.13);
+}
+.dollar {
+    color: rgb(201, 151, 73);
+}
+.table-container {
+    background-color: rgba(218, 77, 45, 0.13);
+}
+.table {
+    color: rgb(218, 78, 45);
+} */
+.btn-container {
+    background-color: rgb(255, 255, 255);
+    padding: 0rem 0rem 3rem 0rem;
+}
+.consulta-btn {
+    background-color: rgb(201, 151, 73);
+    color: rgb(255, 255, 255);
 }
 .consulta-btn:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.11);;
     border: 2px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
+}
+@media (max-width: 600px) {
+    .nav-list {
+        display: none;
+    }
+    .fa-bars {
+        display: inline-block;
+    }
+    .menu:checked ~ .navlist {
+        display: inline-block;
+    }
 }
