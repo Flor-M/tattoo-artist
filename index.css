@@ -61,10 +61,6 @@ header {
     cursor: pointer;
     color: rgb(201, 151, 73);
 }
-.atribution-logo {
-    font-size: 1rem;
-    color: rgba(239, 223, 195, 0.322);
-}
 .header-img {
     width: 100vw;
     height: 80vh;
@@ -197,7 +193,7 @@ textarea {
 }
 .input-submit {
     width: 98%;
-    padding: 2%;
+    padding: 1%;
     margin-top: 4%;
     border: none;
     font-family: "robotoslab-regular";

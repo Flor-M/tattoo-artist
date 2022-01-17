@@ -1,0 +1,192 @@
+body {
+    width: 100vw;
+    margin: 0%;
+}
+@font-face {
+    font-family: "robotoslab-regular";
+    src: url(./assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf)
+}
+@font-face {
+    font-family: "roboto-regular";
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf)
+}
+@font-face {
+    font-family: "roboto-light";
+    src: url(./assets/fonts/Roboto/Roboto-Light.ttf)
+}
+@font-face {
+    font-family: "tattoo";
+    src: url(./assets/fonts/Tattoo/Rooters.ttf)
+}
+li {
+    list-style: none;
+}
+header {
+    width: 100vw;
+    height: 11vh;
+}
+.logo {
+    width: 5%;
+    margin-left: 4%;
+}
+.nav-container {
+    width: 100vw;
+    height: 11vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+#menu {
+    display: none;
+}
+.nav-list {
+    width: 51%;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+.nav-item {
+    margin: 1% 2% 0% 2%;
+}
+.nav-list a, .nav-list-footer a, .up-footer h2 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "robotoslab-regular";
+    transition-duration: 0.3s;
+}
+.nav-list a:hover, .nav-list-footer a:hover {
+    cursor: pointer;
+    color: rgb(201, 151, 73);
+}
+.primer-container {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.iniciar-container {
+    width: 60%;
+    height: 100%;
+    margin-top: 11vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+.form-container {
+    width: 70%;
+    padding: 4%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: "roboto-light";
+}
+.form-container h2, .otra-opcion h3 {
+    font-family: "robotoslab-regular";
+    font-size: 1.3rem;
+}
+.container-input {
+    width: 50%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.ultimo {
+    margin-bottom: 2%;
+}
+.labeles {
+    margin-bottom: 4%;
+}
+.input-sl-in {
+    height: 1.4rem;
+    padding: 2%;
+    border: none;
+}
+.continua {
+    width: 50%;
+    margin-bottom: 3%;
+    padding: 2%;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+.goog {
+    background-color: rgb(220, 80, 49);
+    margin-top: 5%;
+}
+.face {
+    background-color: rgb(37, 109, 216);
+    margin-bottom: 5%;
+}
+.fab {
+    margin-right: 2%;
+}
+span {
+    font-weight: bold;
+}
+.form-container a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.submit,.registrate-btn {
+    width: 50%;
+    height: 2.5rem;
+    margin-top: 4%;
+    background-color: rgb(255, 255, 255);
+    font-family: "robotoslab-regular";
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.declaracion {
+    margin-top: 8%;
+    font-size: 0.8rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.842);
+}
+.otra-opcion-container {
+    width: 30%;
+    padding: 4%;
+    background-image: url(./assets/img/welcome-studio.jpg);
+    overflow: hidden;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.otra-opcion {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "roboto-regular";
+}
+.registrate-btn-container {
+    width: 100%;
+    display: inline-block;
+}
+.registrate-btn-container a {
+    width: 100%;
+    text-decoration: none;
+}
+.registrate-btn {
+    width: 100%;
+}
+.condiciones-container {
+    width: 68%;
+    margin-bottom: 4%;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.inicia-btn {
+    margin-bottom: 5%;
+}
