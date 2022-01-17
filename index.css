@@ -26,11 +26,11 @@ header {
     height: 100vh;
 }
 .logo {
-    width: 5%;
+    width: 4rem;
     margin-left: 4%;
 }
 .nav-inicio {
-    z-index:1
+    z-index: 2;
 }
 .nav-container {
     width: 100vw;
@@ -41,7 +41,7 @@ header {
     justify-content: space-between;
     background-color: black;
 }
-#menu, .fa-bars {
+#menu, .icon {
     display: none;
 }
 #menu:checked ~ ul {
@@ -92,22 +92,33 @@ h1 {
     text-align: center;
     text-decoration: none;
     margin: 3rem 0rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "tattoo";
     color: rgb(0, 0, 0);
 }
-.gallery-container {
+#gallery {
     background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.gallery-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
     flex-wrap: wrap;
-    padding: 2% 0%;
+    padding: 0.5rem 0rem;
+}
+#gallery h2 {
+    color: rgb(255, 255, 255);
+    padding: 1rem 0rem 0.5rem 0rem;
+    margin: 0%;
 }
 .gallery-img {
     height: 15.3rem;
-    transition: 0.5s opacity;
+    transition: 0.5s;
     padding: 1%;
 }
 .gallery-container:hover .gallery-img {
@@ -130,7 +141,43 @@ h1 {
     justify-content: center;
     margin-top: 1.5rem;
 }
-.como, .porque{
+.como-child-odd {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.11);
+    position: relative;
+    right: 44%;
+}
+.como-child-even {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.253);
+    position: relative;
+    left: 44%;
+}
+.como {
+    display: flex;
+    padding: 0.5rem 1rem 2rem 1rem;
+} 
+.odd {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+.even {
+    justify-content: flex-start;
+}
+.text-como-odd {
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.text-como-even {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.porque {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -138,8 +185,10 @@ h1 {
     text-align: center;
     padding: 0rem 2.5rem;
 }
-.titulo-como, .titulo-porque {
-    font-size: 2rem;
+.titulo-como, .titulo-porque, #gallery h2 {
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: "robotoslab-regular";
 }
 .numero-como {
     font-family: "tattoo";
@@ -148,12 +197,13 @@ h1 {
     font-size: 5rem;
 }
 .como h3 {
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
 .como p, .porque p {
     font-family: "roboto-light";
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     margin: 0.2rem;
+    width: 50%;
 }
 .form-consulta-container {
     background-color: rgb(0, 0, 0);
@@ -172,7 +222,7 @@ h1 {
 }
 .form-consulta h4 {
     font-family: "robotoslab-regular";
-    font-size: 1.3rem;
+    font-size: 1rem;
     align-self: flex-start;
 }
 .primer-container {
@@ -263,6 +313,7 @@ footer {
     align-items: center;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
+    overflow: hidden;
 }
 .up-footer {
     display: flex;
@@ -277,7 +328,7 @@ footer {
     width: 30%;
 }
 .logo-footer {
-    width: 16%;
+    width: 4rem;
 }
 .titulo-footer {
     text-decoration: none;
@@ -315,8 +366,8 @@ footer {
     color: rgb(118, 142, 93);
 }
 .down-footer {
-    padding: 1.5%;
-    width: 100vw;
+    width: 100%;
+    padding: 4.5%;
     background-color: rgb(19, 19, 19);
     display: flex;
     flex-direction: column;
@@ -348,7 +399,62 @@ footer {
     .nav-list {
         display: none;
     }
-    .fa-bars {
+    .icon {
         display: inline-block;
     }
+    .img-inicio {
+        height: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .img-inicio {
+        height: 100%;
+        position: relative;
+        z-index: -1;
+        left: -50%;
+    }
+    .up-footer {
+        flex-direction: column;
+    }
+    .info-container-footer {
+        width: 80%;
+        align-items: center;
+    }
+    .info-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-item-footer {
+        width: 73%;
+        align-items: center;
+    }
+    .info-item-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-item-footer p {
+        text-align: center;
+    }
+    .info-item-footer span {
+        padding-left: 0rem;
+        margin-top: 1rem;
+    }
+    .nav-container-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-list-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-container-footer a {
+        margin-bottom: 2rem;
+    }
+}
+@media (min-width:501px) and (max-width: 980px) {
+    
 }
