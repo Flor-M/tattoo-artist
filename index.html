@@ -43,7 +43,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="">
+                    <a href="#consulta-form">
                         CONTACTO
                     </a>
                 </li>
@@ -146,10 +146,39 @@
                 </div>
             </div>
         </section>
-        <div class="btn-container-turno">
-            <button class="turno-btn">
-                QUIERO UN TURNO
-            </button>
+        <div class="form-consulta-container" id="consulta-form">
+            <form action="" class="form-consulta">
+                <h4>
+                    CONTACTO
+                </h4>
+                <div class="primer-container">
+                    <div class="info-form-container">
+                        <div class="container-input">
+                            <label for="nombre" class="label-form">
+                               Nombre:
+                            </label>
+                           <input type="text" class="input-active" id="nombre" placeholder="Escriba su nombre">
+                      </div>
+                      <div class="container-input">
+                           <label for="mail" class="label-form">
+                               Correo Electrónico:
+                           </label>
+                           <input type="email" class="input-active" id="mail" placeholder="Escriba su mail">
+                       </div>
+                    </div>
+                    <div class="texterea-container">
+                        <div class="container-input">
+                            <label for="mensaje" class="label-form">
+                                Mensaje:
+                            </label>
+                            <textarea id="mensaje" class="input-active" placeholder="Escriba su mensaje..." rows="5"></textarea>
+                       </div>
+                    </div>
+                </div>
+                <div class="container-submit" >
+                    <input type="submit" id="submit" class="input-submit">
+                </div>
+            </form>
         </div>
         <section class="porque-container">
             <h2 class="titulo-porque">
@@ -264,9 +293,11 @@
                         </a>
                     </li>
                 </ul>
-                <button class="contact-btn">
-                    Mandanos un mensaje
-                </button>
+                <a href="#consulta-form">
+                    <button class="contact-btn">
+                        Mandanos tu consulta
+                    </button>
+                </a>
             </div>
         </div>
         <div class="down-footer">
@@ -282,17 +313,21 @@
                 </a>
             </div>
             <div class="atribuciones">
-                Icons made by 
-                <a href="https://www.freepik.com" title="Freepik">
-                    Freepik
-                </a> 
-                from 
-                <a href="https://www.flaticon.com/" title="Flaticon">
-                    www.flaticon.com
-                </a>
-                <a href='https://www.freepik.es/vectores/logo' class="atribution-logo">
-                    Vector de Logo creado por dgim-studio - www.freepik.es
-                </a>
+                <div class="freepik">
+                    Icons made by 
+                    <a href="https://www.freepik.com" title="Freepik">
+                        Freepik
+                    </a> 
+                        from 
+                    <a href="https://www.flaticon.com/" title="Flaticon">
+                        www.flaticon.com
+                    </a>
+                </div>
+                <div>
+                    <a href='https://www.freepik.es/vectores/logo' class="atribution-logo">
+                        Vector de Logo creado por dgim-studio - www.freepik.es
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

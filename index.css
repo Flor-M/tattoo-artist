@@ -137,26 +137,53 @@ h1 {
     font-size: 1.3rem;
     margin: 0.2rem;
 }
-.btn-container-turno, .btn-container {
+.form-consulta-container {
+    background-color: rgb(0, 0, 0);
+    padding: 1.5% 0% 4% 0%;
     display: flex;
-    justify-content: center;
-    padding: 4rem 0rem;
-    background-color: rgba(0, 0, 0);
+    align-items: center;
+    flex-direction: column;
 }
-.turno-btn, .consulta-btn {
-    width: 40rem;
-    height: 5rem;
-    border: none;
-    font-family: "robotoslab-regular";
-    font-size: 1.5rem;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    transition-duration: 0.3s;
-}
-.turno-btn:hover, .consulta-btn:hover {
-    cursor: pointer;
-    background-color: rgb(201, 151, 73);
+.form-consulta {
     color: rgb(255, 255, 255);
+    font-family: "roboto-light";
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-consulta h4 {
+    font-family: "robotoslab-regular";
+    font-size: 1.3rem;
+    align-self: flex-start;
+}
+.primer-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-submit {
+    width: 100%;
+    text-align: center;
+}
+.info-form-container, .texterea-container {
+    width: 48%;
+    margin: 1%;
+}
+.container-input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+.label-form {
+    padding-bottom: 4%;
+}
+.input-active {
+    padding: 1%;
+}
+textarea {
+    height: 6.3rem;
 }
 .porque {
     background-color: rgba(201, 152, 73, 0.11);
@@ -165,8 +192,16 @@ h1 {
     height: 20rem;
     justify-content: flex-start;
 }
-.porque p {
+.porque p, input, textarea {
     font-family: "roboto-regular";
+}
+.input-submit {
+    width: 98%;
+    padding: 2%;
+    margin-top: 4%;
+    border: none;
+    font-family: "robotoslab-regular";
+    font-size: 1em;
 }
 .icon-container {
     height: 9rem;
@@ -182,12 +217,20 @@ h1 {
     color: rgb(201, 151, 73);
 }
 .btn-container {
+    display: flex;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
     padding: 0rem 0rem 3rem 0rem;
 }
 .consulta-btn {
+    width: 40rem;
+    height: 5rem;
+    border: none;
+    font-family: "robotoslab-regular";
+    font-size: 1.5rem;
     background-color: rgb(201, 151, 73);
     color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
 }
 .consulta-btn:hover {
     cursor: pointer;
@@ -256,7 +299,7 @@ footer {
 .down-footer {
     padding: 1.5%;
     width: 100vw;
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(19, 19, 19);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,6 +319,12 @@ footer {
     color: rgb(220, 81, 49);
     font-size: 0.7rem;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.freepik {
+    display: flex;
 }
 @media (max-width: 600px) {
     .nav-list {
