@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="regist-inicia-form.css">
     <script src="https://kit.fontawesome.com/e14e491556.js" crossorigin="anonymous"></script>
-    <title>Registrate  - Tattoo Studio</title>
+    <title>Formulario contacto - Tattoo Studio</title>
 </head>
 <body>
     <header>
@@ -53,66 +53,88 @@
         </div>
     </header>
     <main>
-        <div class="primer-container">
-            <div class="iniciar-container">
-                <form action="" class="form-container">
-                    <h2>
-                        Registrate
-                    </h2>
-                    <div class="container-input">
-                        <label for="nombre" class="labeles">
-                            Nombre:
-                        </label>
-                        <input type="text" id="nombre" class="input-sl-in">
-                    </div>
-                    <div  class="container-input">
-                        <label for="email" class="labeles">
-                            Email:
-                        </label>
-                        <input type="email" name="email" id="email" class="input-sl-in">
-                    </div>
-                    <div class="container-input ultimo">
-                        <label for="contraseña" class="labeles">
-                            Contraseña:
-                        </label>
-                        <input type="password" name="contraseña" id="contraseña" class="input-sl-in">
-                    </div>
-                    <div class="condiciones-container">
-                        <input type="checkbox" id="condiciones">
-                        <label for="condiciones">
-                            Declaro haber leído y aceptar las 
+        <div class="form-consulta-container" id="consulta-form">
+            <form action="" class="form-consulta">
+                <h4>
+                    CONTACTO
+                </h4>
+                <div class="primer-container">
+                    <div class="info-form-container">
+                        <fieldset>
+                            <legend>
+                                Datos generales
+                            </legend>
+                            <div class="container-input">
+                                <input type="text" class="input-active" id="asunto" placeholder="Asunto">
+                             </div>
+                             <div class="container-input">
+                                 <textarea id="mensaje" class="input-active" placeholder="Escriba su consulta/idea" rows="5"></textarea>
+                             </div>
+                        </fieldset>
+                    <fieldset>
+                        <legend>
+                            Características del tatuaje
+                        </legend>
+                        <div class="container-input">
+                            <select name="artistas" id="artistas" class="input-active">
+                                <option value="recomendacion">
+                                    Elige un artista
+                                </option>
+                                <option value="recomendacion">
+                                    Quiero que me recomienden
+                                </option>
+                                <option value="artista-a">
+                                    Artista A
+                                </option>
+                                <option value="artista-b">
+                                    Artista B
+                                </option>
+                                <option value="artista-c">
+                                    Artista C
+                                </option>
+                            </select>
+                        </div>
+                        <div class="container-input">
+                            <input type="text" class="input-active" id="zona-cuerpo" placeholder="Zona del cuerpo">
+                         </div>
+                        <div class="container-input">
+                            <label for="alto">
+                                Alto del tatuaje
+                            </label>
+                            <input type="number" name="alto" id="alto" placeholder="Indique la medida en cm">
+                        </div>
+                        <div class="container-input">
+                            <label for="ancho">
+                                Ancho del tatuaje
+                            </label>
+                            <input type="number" name="ancho" id="ancho" placeholder="Indique la medida en cm">
+                        </div>
+                        <div class="container-input">
+                            <input type="checkbox" name="color" id="color">
+                            <label for="color">
+                                Color
+                            </label>
+                            <input type="checkbox" name="b-y-n" id="b-y-n">
+                            <label for="b-y-n">
+                                Blanco y negro
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <input type="checkbox" name="declaracion" id="declaracion">
+                        <label for="declaracion">
+                            He leído y acepto la 
                             <a href="">
-                                condiciones generales del sitio
-                            </a> 
-                            y la 
-                            <a href="">
-                                normativa sobre protección de datos
+                                Politica de Privacidad
                             </a>
                             .
                         </label>
                     </div>
-                    <button type="submit" class="input-sl-in  submit inicia-btn">
-                        Enviar
-                    </button>
-                </form>
-                <div class="otra-opcion-container">
-                    <div class="otra-opcion">
-                        <h3>
-                            Ya tenés una cuenta?
-                        </h3>
-                        <p>
-                            Inicia sesión y chequeá tus consultas y turnos!
-                        </p>
-                        <div class="registrate-btn-container">
-                            <a href="./inicia sesion.html">
-                                <button class="registrate-btn">
-                                    Inicia sesión
-                                </button>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-            </div>
+                <div class="container-submit" >
+                    <input type="submit" id="submit" class="input-submit">
+                </div>
+            </form>
         </div>
     </main>
     <footer>
@@ -227,3 +249,4 @@
         </div>
     </footer>
 </body>
+</html>
