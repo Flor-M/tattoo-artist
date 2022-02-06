@@ -9,7 +9,7 @@
     <title>Tattoo Studio</title>
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <div class="nav-inicio">
             <nav class="nav-container">
                 <img src="./assets/img/logo-tattoo-studio.png" alt="Logo Tattoo Studio" class="logo">
@@ -34,11 +34,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./inicia sesion.html">
-                            LOG IN / SIGN UP
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a href="#faq-container">
                             FAQ
                         </a>
@@ -48,18 +43,27 @@
                             CONTACTO
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="./inicia sesion.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
-        <div class="header-img">
-            <img src="./assets/img/Copia de welcome-studio.jpg" alt="Foto de tatuaje en proceso" class="img-inicio">
+        <div class="gradient-abajo">
+            <div class="gradient">
+                <img src="./assets/img/logo-tattoo-studio.png" alt="Logo Tattoo Studio" class="logo-inicio">
+                <div class="welcome-container">
+                    <h1>
+                        Tattoo Studio
+                    </h1>
+                    <p>
+                        Misión Tattoo Studio - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic est possimus quos, esse reprehenderit, aperiam distinctio nisi odio dicta atque accusantium debitis, asperiores placeat qui quia sed! Assumenda, numquam cum!
+                    </p>
+                </div>
+            </div>
         </div>
-        <h1>
-            TATTOO STUDIO
-        </h1>
-        <p>
-            Misión Tattoo Studio - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic est possimus quos, esse reprehenderit, aperiam distinctio nisi odio dicta atque accusantium debitis, asperiores placeat qui quia sed! Assumenda, numquam cum!
-        </p>
     </header>
     <main>
         <div id="gallery" class="galeria">
@@ -73,17 +77,11 @@
                 <a href="https://www.instagram.com/p/CYnQwhurqug/" class="gallery-img">
                     <img src="./assets/img/g1.jpeg" alt="Tattoo aguila tradi en cuello" class="gallery-img" >
                 </a>
-                <a href="https://www.instagram.com/p/CYnQvgoLCsF/" class="gallery-img">
-                    <img src="./assets/img/g2.jpeg" class="gallery-img" alt="Tattoos en brazos">
-                </a>
                 <a href="https://www.instagram.com/p/CYnQuI_riCn/" class="gallery-img">
                     <img src="./assets/img/g3.jpeg" class="gallery-img" alt="Tattoo en hombro">
                 </a>
                 <a href="https://www.instagram.com/p/CYnQtFNL8cC/" class="gallery-img">
                     <img src="./assets/img/g4.jpeg" class="gallery-img" alt="Tattoo en cuello">
-                </a>
-                <a href="https://www.instagram.com/p/CYnQsDhLnzz/" class="gallery-img">
-                    <img src="./assets/img/g5.jpeg" class="gallery-img" alt="Tattoo aguila en pecho">
                 </a>
                 <a href="https://www.instagram.com/p/CYnQq_AL_fi/" class="gallery-img">
                     <img src="./assets/img/g6.jpeg" class="gallery-img" alt="Tattoo manga completa vista desde arriba">
@@ -96,228 +94,261 @@
                 </a>
             </div>
         </div>
-        <section class="como-container">
-            <h2>
-                COMO TRABAJAMOS?
-            </h2>
-            <p>
-                Siempre podés pasar por el local para hablar con nosotros y sacar un turno, pero si preferís hacer tus consultas online podés 
-                <span>
-                    registrate en nuestra página y gestioná tus consultas y turnos desde la web
-                </span>
-                .
-            </p>
-        </section>
-        <section class="pq-container">
-            <h2 class="titulo-pq">
-                PARA QUE REGISTRARME?
-            </h2>
-            <div class="pq-juntos">
-                <div class="pq">
-            
-                    <div class="text-pq">
-                        <h3>
-                            Registro de tus consultas
-                        </h3>
-                        <p>
-                            Al mandarnos tu consulta, las fotos o dibujos de referencia quedan en tu cuenta junto con las respuestas a tus consultas y los presupuestos que solicitaste.
-                        </p>
-                    </div>
-                </div>
-                <div class="pq">
-
-                    <div class="text-pq">
-                        <h3>
-                            Presupuestos actualizados
-                        </h3>
-                        <p>
-                            Si decidiste dejar para más adelante el tatuaje, cuando vuelvas a entrar a la web, los precios que te aparecen van a estar actualizados.
-                        </p>
-                    </div>
-                </div>
-                <div class="pq">
-                    
-                    <div class="text-pq">
-                        <h3>
-                            Gestión de turnos
-                        </h3>
-                        <p>
-                            Podés ver la disponibilidad del artista y elegir el día y horario que te convenga. Después de sacar tu turno podés cambiarlo o cancelarlo desde la web.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="btn-container">
-                <button class="cuenta-btn">
-                    CREÁ TU CUENTA
-                </button>
-            </div>
-        </section>
-        <article class="nosotros-container">
+        <article class="nosotros-container" id="nosotros-container">
             <h2>
                 NOSOTROS
             </h2>
             <div class="artista-container">
                 <div class="artista">
-                    <h3>
-                        Artista A
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo expedita maiores, et, inventore harum dolores odit eos reprehenderit nobis magni amet minus tempore molestiae enim facilis quidem corporis quibusdam.
-                    </p>
+                    <div class="artista-back">
+                        <h3>
+                            Artista A
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo expedita maiores, et, inventore harum dolores odit eos reprehenderit.
+                        </p>
+                    </div>
                 </div>
                 <div class="artista">
-                    <h3>
-                        Artista B
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo expedita maiores, et, inventore harum dolores odit eos reprehenderit nobis magni amet minus tempore molestiae enim facilis quidem corporis quibusdam.
-                    </p>
+                    <div class="artista-back">
+                        <h3>
+                            Artista B
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo expedita maiores, et, inventore harum dolores odit eos reprehenderit.
+                        </p>
+                    </div>
                 </div>
                 <div class="artista">
-                    <h3>
-                        Artista C
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo expedita maiores, et, inventore harum dolores odit eos reprehenderit nobis magni amet minus tempore molestiae enim facilis quidem corporis quibusdam.
-                    </p>
+                    <div class="artista-back">
+                        <h3>
+                            Artista C
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo expedita maiores, et, inventore harum dolores odit eos reprehenderit.
+                        </p>
+                    </div>
                 </div>
             </div>
         </article>
-        <article class="faq-container">
-            <dl class="faq-juntos">
-                <div class="faq">
-                    <dt>
-                        Horarios de atención
-                    </dt>
-                    <dd>
-                        Estamos de Martes a Sábados de 9hs a 17hs. Las respuestas a las consultas online también se contestarán en ese horario.
-                    </dd>
+        <section class="como-container">
+            <div class="como-gradient">
+                <div class="como">
+                    <h2>
+                        CÓMO TRABAJAMOS?
+                    </h2>
+                    <p>
+                        Siempre podés pasar por el local para hablar con nosotros y sacar un turno, pero si preferís hacer tus consultas online podés 
+                        <span>
+                            registrate en nuestra página
+                        </span>
+                        y gestioná tus consultas y turnos desde la web.
+                    </p>
+                    <button class="registrate-btn">
+                        REGISTRATE
+                    </button>
                 </div>
-                <div class="faq">
-                    <dt>
+            </div>
+        </section>
+        <section class="pq-container">
+            <h2 class="titulo-pq">
+                Para qué crear una cuenta?
+            </h2>
+            <div class="pq-juntos">
+                <div class="pq">
+                    <div class="opacidad-falsa">
+                        <i class="fas fa-clipboard-list icono-pq"></i>
+                        <div class="text-pq">
+                            <h3>
+                                Registro de tus consultas
+                            </h3>
+                            <p>
+                                Al mandarnos tu consulta, las fotos o dibujos de referencia quedan en tu cuenta junto con las respuestas a tus consultas y los presupuestos que solicitaste.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pq">
+                    <div class="opacidad-falsa">
+                        <i class="fas fa-money-check-alt icono-pq"></i>
+                        <div class="text-pq">
+                            <h3>
+                                Presupuestos actualizados
+                            </h3>
+                            <p>
+                                Si decidiste dejar para más adelante el tatuaje, cuando vuelvas a entrar a la web, los precios que te aparecen van a estar actualizados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pq">
+                    <div class="opacidad-falsa">
+                        <i class="fas fa-calendar-check icono-pq"></i>
+                        <div class="text-pq">
+                            <h3>
+                                Gestión de turnos
+                            </h3>
+                            <p>
+                                Podés ver la disponibilidad del artista y elegir el día y horario que te convenga. Después de sacar tu turno podés cambiarlo o cancelarlo desde la web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article class="faq-container" id="faq-container">
+            <h2>
+                FAQ
+            </h2>
+            <div class="faq-juntos">
+                <details class="faq">
+                    <summary>
+                        Horarios de atención
+                    </summary>
+                    <p>
+                        Estamos de Martes a Sábados de 9hs a 17hs. Las respuestas a las consultas online también se contestarán en ese horario.
+                    </p>
+                </details>
+                <details class="faq">
+                    <summary>
                         Cómo contactarme
-                    </dt>
-                    <dd>
+                    </summary>
+                    <p>
                         Para consultas sobre tatuajes podés registrarte o iniciar sesión en nuestra web, completar el formulario con tu consulta o pasa por el local y hablá con nosotros. Para otras consultas, e-shop, querés trabajar con nosotros etc podés enviarnos un mail a 
                         <a href="">
                             tattoo.studio@falso.com
                         </a>
-                    </dd>
-                </div>
-                <div class="faq">
-                    <dt>
+                    </p>
+                </details>
+                <details class="faq">
+                    <summary>
                         Precio de los tatuajes
-                    </dt>
-                    <dd>
+                    </summary>
+                    <p>
                         Cada tatuaje tiene una complejidad distinta, para consultar por el precio registrate en nuestra web y completá el formulario o pasa por el local y hablá con nosotros.
-                    </dd>
-                </div>
-                <div class="faq">
-                    <dt>
+                    </p>
+                </details>
+                <details class="faq">
+                    <summary>
                         Menores de edad
-                    </dt>
-                    <dd>
+                    </summary>
+                    <p>
                         Ningún artista del estudio presta sus servicios a menores de edad bajo ninguna circunstancia.
-                    </dd>
-                </div>
-                <div class="faq">
-                    <dt>
+                    </p>
+                </details>
+                <details class="faq">
+                    <summary>
                         Cuidados del tatuaje
-                    </dt>
-                    <dd>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident alias mollitia cum sit adipisci reprehenderit expedita iusto quam totam laudantium, modi ducimus quisquam deleniti eaque veniam atque rerum quo culpa.
-                    </dd>
-                </div>
-                <div class="faq">
-                    <dt>
+                    </summary>
+                    <p>
+                        Cada tatuaje tiene una complejidad distinta, para consultar por el precio registrate en nuestra web y completá el formulario o pasa por el local y hablá con nosotros.
+                    </p>
+                </details>
+                <details class="faq">
+                    <summary>
                         Cicatrización del tatuaje
-                    </dt>
-                    <dd>
+                    </summary>
+                    <p>
                         Cada cuerpo es distinto el tiempo promedio son de 2 a 4 semanas, recordá que el tatuaje es una herida, seguí nuestras indicaciones de aftercare y por cualquier inquietud o problema comunicate con nosotros.
-                    </dd>
-                </div>
-            </dl>
+                    </p>
+                </details>
+            </div>
         </article>
+        <section class="shop-container">
+            <div class="shop-gradient">
+                <button class="shop-btn">
+                    GO TO SHOP
+                </button>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="up-footer">
-            <div class="info-container-footer">
+        <div class="up-footer-back">
+            <div class="up-footer">
                 <img src="./assets/img/logo-tattoo-studio.png" alt="Logo Tattoo Studio" class="logo-footer">
-                <div>
-                    <h2 class="titulo-footer">
-                        INFO
-                    </h2>
-                    <ul class="info-list">
-                        <li class="info-item-footer mision-footer">
-                            <i class="fas fa-heart"></i>
-                            <p>
-                                Misión Tatto Studio -- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo mollitia laudantium quos nihil quam est debitis vel soluta consequuntur eaque ullam.
-                            </p>
-                        </li>
-                        <li  class="info-item-footer">
-                            <i class="fas fa-map-marker-alt footer-icon"></i>
-                            <span>
-                                Calle Falsa 123
-                            </span>
-                        </li>
-                        <li  class="info-item-footer">
-                            <i class="fas fa-phone footer-icon"></i>
-                            <span>
-                                1231 123 12 123
-                            </span>
-                        </li>
-                        <li class="info-item-footer">
-                            <i class="fas fa-clock footer-icon"></i>
-                            <span>
-                                Martes a Sábados de 9hs a 17hs
-                            </span>
-                        </li>
-                        <li class="info-item-footer">
-                            <i class="fas fa-envelope footer-icon"></i>
-                            <span>
-                                tattoo.studio@falso.com
-                            </span>
-                        </li>
-                    </ul>
+                <div class="flex-up-footer">
+                    <div class="info-container-footer">
+                        <div>
+                            <h2 class="titulo-footer">
+                                INFO
+                            </h2>
+                            <ul class="info-list">
+                                <li class="info-item-footer mision-footer">
+                                    <i class="fas fa-heart"></i>
+                                    <p>
+                                        Misión Tatto Studio -- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo mollitia laudantium quos nihil quam est debitis vel soluta consequuntur eaque ullam.
+                                    </p>
+                                </li>
+                                <li  class="info-item-footer">
+                                    <i class="fas fa-map-marker-alt footer-icon"></i>
+                                    <span>
+                                        Calle Falsa 123
+                                    </span>
+                                </li>
+                                <li  class="info-item-footer">
+                                    <i class="fas fa-phone footer-icon"></i>
+                                    <span>
+                                        1231 123 12 123
+                                    </span>
+                                </li>
+                                <li class="info-item-footer">
+                                    <i class="fas fa-clock footer-icon"></i>
+                                    <span>
+                                        Martes a Sábados de 9hs a 17hs
+                                    </span>
+                                </li>
+                                <li class="info-item-footer">
+                                    <i class="fas fa-envelope footer-icon"></i>
+                                    <span>
+                                        tattoo.studio@falso.com
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-container-footer">
+                        <h2 class="titulo-footer">
+                            Links Útiles
+                        </h2>
+                        <ul class="nav-list-footer">
+                            <li class="nav-item-footer">
+                                <a href="#inicio">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="#gallery">
+                                    Galería de tatuajes
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="">
+                                    Shop
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="#nosotros-container">
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="#faq-container">
+                                    Faq
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="./form-contacto.html">
+                                    Contacto
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="./inicia sesion.html" id="login">
+                                    Log in / Sign in
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="nav-container-footer">
-                <h2 class="titulo-footer">
-                    Links Útiles
-                </h2>
-                <ul class="nav-list-footer">
-                    <li class="nav-item-footer">
-                        <a href="#gallery">
-                            Galería de tatuajes
-                        </a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a href="">
-                            Shop
-                        </a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a href="#nosotros-container">
-                            Nosotros
-                        </a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a href="./inicia sesion.html">
-                            Log in / Sign in
-                        </a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a href="#faq-container">
-                            Faq
-                        </a>
-                    </li>
-                </ul>
-                <a href="./form-contacto.html">
-                    <button class="contact-btn">
-                        Mandanos tu consulta
-                    </button>
-                </a>
             </div>
         </div>
         <div class="down-footer">

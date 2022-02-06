@@ -1,6 +1,7 @@
 body {
     width: 100vw;
     margin: 0%;
+    background-color: rgb(19, 19, 19);
 }
 @font-face {
     font-family: "robotoslab-regular";
@@ -23,11 +24,13 @@ li {
 }
 header {
     width: 100vw;
-    height: 94vh;
+    height: 100vh;
+    background-image: url(./assets/img/welcome-studio.jpg);
 }
 .logo {
     width: 4rem;
-    margin-left: 4%;
+    margin-left: 5%;
+    opacity: 0.5;
 }
 .nav-inicio {
     z-index: 2;
@@ -39,7 +42,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
 }
 #menu, .icon {
     display: none;
@@ -49,11 +51,11 @@ header {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-end;
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(19, 19, 19, 0.685);
     position: absolute;
     top: 11vh;
     right: 0vw; 
-} 
+}
 #menu:checked ~ ul > li {
     margin-right: 2rem;
     padding-bottom: 2%;
@@ -75,34 +77,79 @@ header {
 }
 .nav-list a, .nav-list-footer a, .up-footer h2 {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(165, 156, 135);
     font-family: "robotoslab-regular";
     transition-duration: 0.3s;
 }
 .nav-list a:hover, .nav-list-footer a:hover {
     cursor: pointer;
-    color: rgb(201, 151, 73);
+    color: rgb(118, 142, 93);
+}
+.fa-user-circle {
+    font-size: 1.5rem;
+    color: rgb(118, 142, 93);
+}
+.fa-user-circle:hover {
+    color: rgb(165, 156, 135);
 }
 .header-img {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
 }
-/* MAIN */
+.gradient-abajo {
+    height: 100%;
+    width: 100%;
+    background: rgb(19,19,19);
+background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0) 50%, rgba(19,19,19,0) 100%);
+}
+.gradient {
+    height: 100%;
+    background: rgb(19,19,19);
+    background: linear-gradient(90deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0.5) 25%, rgba(19,19,19,0.5) 50%, rgba(19,19,19,0.5) 75%, rgba(19,19,19,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-top: 4rem;
+    color: rgb(165, 156, 135);
+}
 h1 {
     text-align: center;
     text-decoration: none;
-    margin: 3rem 0rem;
-    font-size: 2rem;
+    margin: 0rem;
+    font-size: 1,7rem;
     font-family: "tattoo";
-    color: rgb(0, 0, 0);
 }
+.welcome-container p {
+    text-align: center;
+}
+.logo-inicio {
+    height: 40%;
+    opacity: 0.4;
+}
+/* MAIN */
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.galeria, .nosotros-container, .como-container, .pq-container, .faq-container, .shop-container {
+    margin-top: 5rem;
+}
+/* GALERIA */
 #gallery {
-    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    color: rgb(165, 156, 135);
 }
 .gallery-container {
     display: flex;
@@ -112,15 +159,18 @@ h1 {
     flex-wrap: wrap;
     padding: 0.5rem 0rem;
 }
-#gallery h2 {
-    color: rgb(255, 255, 255);
-    padding: 1rem 0rem 0.5rem 0rem;
+h2 {
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: "robotoslab-regular";
+    padding-bottom: 0.5rem;
     margin: 0%;
+    color: rgb(118, 142, 93);
 }
 .gallery-img {
-    height: 15.3rem;
+    height: 16.5rem;
+    width: 23.3rem;
     transition: 0.5s;
-    padding: 1%;
 }
 .gallery-container:hover .gallery-img {
     opacity: 0.8;
@@ -128,83 +178,217 @@ h1 {
 .gallery-container:hover .gallery-img:hover {
     opacity: 1;
 }
-.como-container, .porque-container {
-    padding: 3rem 0rem 4rem 0rem;
+.galeria p {
+    opacity: 0.6;
+    margin: 0.5rem 0rem 2rem 0rem;
+}
+/* NOSOTROS */
+.nosotros-container, .pq-container, .faq-container, .gallery-container {
+    width: 70rem;
+}
+.artista-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: rgb(165, 156, 135);
+    margin-top: 3rem;
+}
+.artista {
+    width: 18rem;
+    height: 21rem;
+    background-image: url(./assets/img/artist.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    font-family: "robotoslab-regular";
+}
+.artista-back {
+    background-color: rgba(19, 19, 19, 0.849);
+    padding: 0.5rem;
+    width: 100%;
+}
+.artista-back p {
+    display: none;
+    font-size: 0.9rem;
+    font-family: "robotoslab-regular";
+}
+.artista:hover .artista-back p {
+    display: inline;
+    font-family: "robotoslab-regular";
+    cursor: pointer;
+}
+/* COMO TRABAJAMOS */
+.como-container {
+    height: 20rem;
+    width: 100vw;
+    background-image: url(./assets/img/welcome-studio.jpg);
+}
+.como-gradient {
+    width: 100%;
+    height: 100%;
+    background: rgb(19, 19, 19);
+    background: linear-gradient(90deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0.7) 25%, rgba(19,19,19,0.7) 50%, rgba(19,19,19,0.7) 75%, rgba(19,19,19,1) 100%);
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    font-family: "roboto-regular";
-}
-.comos4, .porque3 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 1.5rem;
-}
-.como-child-odd {
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.11);
-    position: relative;
-    right: 44%;
-}
-.como-child-even {
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.253);
-    position: relative;
-    left: 44%;
 }
 .como {
+    width: 30%;
     display: flex;
-    padding: 0.5rem 1rem 2rem 1rem;
-} 
-.odd {
-    justify-content: flex-start;
-    flex-direction: row-reverse;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: "robotoslab-regular";
+    color: rgb(165, 156, 135);
 }
-.even {
-    justify-content: flex-start;
+.como p {
+    text-align: center;
+    font-size: 0.9rem;
 }
-.text-como-odd {
-    padding-right: 1rem;
+.como h2, .como span {
+    color: rgb(220, 81, 49);
+}
+.registrate-btn {
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 6%;
+    background-color: rgb(220, 81, 49);
+    color: rgb(19, 19, 19);
+    border: none;
+    font-family: "robotoslab-regular";
+    font-weight: bold;
+    font-size: 1rem;
+    transition-duration: 0.3s;
+}
+.registrate-btn:hover {
+    background-color: rgb(194, 71, 43);
+    cursor: pointer;
+}
+/* PARA QUE */
+.pq-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    flex-flow: column wrap;
+    align-items: center;
 }
-.text-como-even {
-    padding-left: 1rem;
+.pq-juntos {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4%;
 }
-.porque {
-    width: 20%;
+.pq {
+    width: 18rem;
+    height: 23rem;
+    background-image: url(./assets/img/welcome-studio.jpg);
+    background-size: cover;
+}
+.opacidad-falsa {
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.884);
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 0rem 2.5rem;
-}
-.titulo-como, .titulo-porque, #gallery h2 {
-    font-size: 1rem;
-    text-decoration: none;
+    justify-content: space-evenly;
+    color: rgb(165, 156, 135);
     font-family: "robotoslab-regular";
 }
-.numero-como {
-    font-family: "tattoo";
-}
-.numero-como, .icono-porque {
+.icono-pq {
     font-size: 5rem;
+    opacity: 0.6;
+    margin-top: 24%;
 }
-.como h3 {
-    font-size: 1.1em;
+.text-pq {
+    width: 100%;
+    height: 50%;
+    margin-top: 12%;
+    background-color: rgba(19, 19, 19, 0.568);
+    align-self: flex-end;
+    text-align: center;
 }
-.como p, .porque p {
-    font-family: "roboto-light";
+.text-pq p {
+    font-family: "robotoslab-regular";
     font-size: 0.9rem;
-    margin: 0.2rem;
-    width: 50%;
+    padding: 0% 3%;
+    opacity: 0.7;
+}
+/* FAQ */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: rgb(165, 156, 135);
+}
+.faq-juntos {
+    width: 60%;
+    align-self: center;
+    font-family: "robotoslab-regular";
+}
+summary {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    border-bottom: 2px solid rgb(118, 142, 93);
+    padding: 3% 0%;
+    transition-duration: 0.3s;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+details summary::before { 
+    content:"+"; 
+    color: rgb(118, 142, 93);
+    margin-left: 3%;
+    font-size: 2rem;
+    transform-origin: center;
+    transition: 200ms linear;
+}
+details[open] summary:before {
+    transform: rotate(45deg);
+  }
+summary:hover {
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;
+}
+.faq p {
+    text-align: end;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+.faq a {
+    text-decoration: none;
+    color: rgb(226, 214, 187);
+}
+/* SHOP BTN */
+.shop-container {
+    height: 11rem;
+    width: 100vw;
+    background-image: url(./assets/img/welcome-studio.jpg);
+}
+.shop-gradient {
+    width: 100%;
+    height: 100%;
+    background: rgb(19, 19, 19);
+    background: linear-gradient(90deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0.7) 25%, rgba(19,19,19,0.7) 50%, rgba(19,19,19,0.7) 75%, rgba(19,19,19,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop-btn {
+    width: 30%;
+    height: 2.5rem;
+    background-color: rgb(118, 142, 93);
+    color: rgb(19, 19, 19);
+    border: none;
+    font-family: "robotoslab-regular";
+    font-weight: bold;
+    font-size: 1rem;
+    transition-duration: 0.3s;
+}
+.shop-btn:hover {
+    background-color: rgb(101, 121, 79);
+    cursor: pointer;
 }
 /* .form-consulta-container {
     background-color: rgb(0, 0, 0);
@@ -310,27 +494,41 @@ textarea {
 /* FOOTER */
 footer {
     height: 40%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    color: rgb(165, 156, 135);
     overflow: hidden;
 }
-.up-footer {
+.up-footer-back {
+    width: 100%;
+    background-color: rgb(15, 15, 15);
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+.up-footer {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
     justify-content: space-evenly;
     align-items: center;
     padding: 2% 0%;
 }
+.flex-up-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
 .info-container-footer {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 45%;
 }
 .logo-footer {
     width: 4rem;
+    opacity: 0.5;
+    align-self: flex-start;
 }
 .titulo-footer {
     text-decoration: none;
@@ -352,25 +550,14 @@ footer {
 .info-item-footer p, .info-item-footer span {
     padding-left: 0.8rem;
 }
-.contact-btn {
-    height: 2.5rem;
-    width: 13rem;
-    margin-top: 9%;
-    border: none;
-    background-color: rgb(118, 142, 93);
-    color: rgb(255, 255, 255);
-    font-family: "robotoslab-regular";
-    font-size: 1rem;
-    transition-duration: 0.3s;
+#login {
+    color: rgb(220, 81, 49);
 }
-.contact-btn:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(118, 142, 93);
+#login:hover {
+    color: rgb(194, 71, 43);
 }
 .down-footer {
-    width: 100%;
-    padding: 4.5%;
-    background-color: rgb(19, 19, 19);
+    padding: 1.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
