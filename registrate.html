@@ -9,18 +9,20 @@
     <title>Registrate  - Tattoo Studio</title>
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <div class="nav-inicio">
             <nav class="nav-container">
-                <img src="./assets/img/logo-tattoo-studio.png" alt="Logo Tattoo Studio" class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/logo-tattoo-studio.png" alt="Logo Tattoo Studio" id="logo">
+                </a>
                 <label for="menu" class="icon">
                     <i class="fas fa-bars"></i>
                 </label>
                 <input type="checkbox" name="menu" id="menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#gallery">
-                            TATTOOS GALLERY
+                        <a href="./index.html#gallery">
+                            GALERÍA
                         </a>
                     </li>
                     <li class="nav-item">
@@ -29,23 +31,23 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#nosotros-container">
+                        <a href="./index.html#nosotros-container">
                             NOSOTROS
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./inicia sesion.html">
-                            LOG IN / SIGN UP
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#faq-container">
+                        <a href="./index.html#faq-container">
                             FAQ
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="./form-contacto.html">
                             CONTACTO
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./inicia sesion.html">
+                            <i class="fas fa-user-circle"></i>
                         </a>
                     </li>
                 </ul>
@@ -56,26 +58,17 @@
         <div class="primer-container">
             <div class="iniciar-container">
                 <form action="" class="form-container">
-                    <h2>
-                        Registrate
-                    </h2>
+                    <h1>
+                        REGISTRATE
+                    </h1>
                     <div class="container-input">
-                        <label for="nombre" class="labeles">
-                            Nombre:
-                        </label>
-                        <input type="text" id="nombre" class="input-sl-in">
+                        <input type="text" placeholder="Nombre" id="nombre" class="input-sl-in">
                     </div>
                     <div  class="container-input">
-                        <label for="email" class="labeles">
-                            Email:
-                        </label>
-                        <input type="email" name="email" id="email" class="input-sl-in">
+                        <input type="email" name="email" placeholder="Email" id="email" class="input-sl-in">
                     </div>
                     <div class="container-input ultimo">
-                        <label for="contraseña" class="labeles">
-                            Contraseña:
-                        </label>
-                        <input type="password" name="contraseña" id="contraseña" class="input-sl-in">
+                        <input type="password" name="contraseña" placeholder="Contraseña" id="contraseña" class="input-sl-in">
                     </div>
                     <div class="condiciones-container">
                         <input type="checkbox" id="condiciones">
@@ -91,8 +84,8 @@
                             .
                         </label>
                     </div>
-                    <button type="submit" class="input-sl-in  submit inicia-btn">
-                        Enviar
+                    <button type="submit" class="input-sl-in submit inicia-btn">
+                        ENVIAR
                     </button>
                 </form>
                 <div class="otra-opcion-container">
@@ -106,7 +99,7 @@
                         <div class="registrate-btn-container">
                             <a href="./inicia sesion.html">
                                 <button class="registrate-btn">
-                                    Inicia sesión
+                                    INICIA SESIÓN
                                 </button>
                             </a>
                         </div>
@@ -116,83 +109,94 @@
         </div>
     </main>
     <footer>
-        <div class="up-footer">
-            <div class="info-container-footer">
-                <img src="./assets/img/logo-tattoo-studio.png" alt="Logo Tattoo Studio" class="logo-footer">
-                <div>
-                    <h2 class="titulo-footer">
-                        INFO
-                    </h2>
-                    <ul class="info-list">
-                        <li class="info-item-footer mision-footer">
-                            <i class="fas fa-heart"></i>
-                            <p>
-                                Misión Tatto Studio -- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo mollitia laudantium quos nihil quam est debitis vel soluta consequuntur eaque ullam.
-                            </p>
-                        </li>
-                        <li  class="info-item-footer">
-                            <i class="fas fa-map-marker-alt footer-icon"></i>
-                            <span>
-                                Calle Falsa 123
-                            </span>
-                        </li>
-                        <li  class="info-item-footer">
-                            <i class="fas fa-phone footer-icon"></i>
-                            <span>
-                                1231 123 12 123
-                            </span>
-                        </li>
-                        <li class="info-item-footer">
-                            <i class="fas fa-clock footer-icon"></i>
-                            <span>
-                                Martes a Sábados de 9hs a 17hs
-                            </span>
-                        </li>
-                        <li class="info-item-footer">
-                            <i class="fas fa-envelope footer-icon"></i>
-                            <span>
-                                tattoo.studio@falso.com
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="nav-container-footer">
-                <h2 class="titulo-footer">
-                    Links Útiles
-                </h2>
-                <ul class="nav-list-footer">
-                    <li class="nav-item-footer">
-                        <a href="#gallery">
-                            Galería de tatuajes
-                        </a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a href="">
-                            Shop
-                        </a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a href="#nosotros-container">
-                            Nosotros
-                        </a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a href="./inicia sesion.html">
-                            Log in / Sign in
-                        </a>
-                    </li>
-                    <li class="nav-item-footer">
-                        <a href="#faq-container">
-                            Faq
-                        </a>
-                    </li>
-                </ul>
-                <a href="./form-contacto.html">
-                    <button class="contact-btn">
-                        Mandanos tu consulta
-                    </button>
+        <div class="up-footer-back">
+            <div class="up-footer">
+                <a href="./index.html">
+                    <img src="./assets/img/logo-tattoo-studio.png" alt="Logo Tattoo Studio" id="logo-footer">
                 </a>
+                <div class="flex-up-footer">
+                    <div class="info-container-footer">
+                        <div>
+                            <h2 class="titulo-footer">
+                                INFO
+                            </h2>
+                            <ul class="info-list">
+                                <li class="info-item-footer mision-footer">
+                                    <i class="fas fa-heart"></i>
+                                    <p>
+                                        Misión Tatto Studio -- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo mollitia laudantium quos nihil quam est debitis vel soluta consequuntur eaque ullam.
+                                    </p>
+                                </li>
+                                <li  class="info-item-footer">
+                                    <i class="fas fa-map-marker-alt footer-icon"></i>
+                                    <span>
+                                        Calle Falsa 123
+                                    </span>
+                                </li>
+                                <li  class="info-item-footer">
+                                    <i class="fas fa-phone footer-icon"></i>
+                                    <span>
+                                        1231 123 12 123
+                                    </span>
+                                </li>
+                                <li class="info-item-footer">
+                                    <i class="fas fa-clock footer-icon"></i>
+                                    <span>
+                                        Martes a Sábados de 9hs a 17hs
+                                    </span>
+                                </li>
+                                <li class="info-item-footer">
+                                    <i class="fas fa-envelope footer-icon"></i>
+                                    <span>
+                                        tattoo.studio@falso.com
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-container-footer">
+                        <h2 class="titulo-footer">
+                            Links Útiles
+                        </h2>
+                        <ul class="nav-list-footer">
+                            <li class="nav-item-footer">
+                                <a href="./index.html">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="./index.html#gallery">
+                                    Galería de tatuajes
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="">
+                                    Shop
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="./index.html#nosotros-container">
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="./index.html#faq-container">
+                                    Faq
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="./form-contacto.html">
+                                    Contacto
+                                </a>
+                            </li>
+                            <li class="nav-item-footer">
+                                <a href="./inicia sesion.html" id="login">
+                                    Log in / Sign in
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="down-footer">

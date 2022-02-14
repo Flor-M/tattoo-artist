@@ -95,7 +95,7 @@ main {
 }
 .iniciar-container {
     width: 60%;
-    height: 75%;
+    margin-top: 3%;
     display: flex;
     justify-content: center;
     background-image: url(./assets/img/welcome-studio.jpg);
@@ -105,68 +105,79 @@ main {
     bottom: 6%;
 }
 .form-container {
-    width: 70%;
+    width: 100%;
+    height: 100%;
     padding: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     color: rgb(165, 156, 135);
     background: linear-gradient(90deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0.7) 25%, rgba(19,19,19,0.7) 50%, rgba(19,19,19,0.7) 75%, rgba(19,19,19,1) 100%);
 }
-.form-container h1, .otra-opcion h3 {
+.form-container h1 {
     font-size: 1rem;
     text-decoration: none;
     padding-bottom: 0.5rem;
-    margin: 0%;
+    margin-left: 8%;
     color: rgb(165, 156, 135);
+    align-self: flex-start;
+}
+.parraf-contacto {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 70%;
+    margin-bottom: 3%;
 }
 .container-input {
     width: 50%;
-    margin-bottom: 4%;
-    display: flex;
-    flex-flow: column wrap;
-}
-.ultimo {
     margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
-.labeles {
-    margin-bottom: 4%;
+.segundo-fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .input-sl-in {
-    height: 1.4rem;
-    padding: 2%;
+    height: 2rem;
+    width: 42%;
+    margin: 0% 3% 3% 3%;
+    padding: 1%;
     border: none;
     background: none;
     color: rgb(165, 156, 135);
     border-bottom: 2px solid rgb(165, 156, 135);
 }
-.input-sl-in::placeholder {
+.texto {
+    margin: 0% 3% 3% 3%;
+    padding: 1%;
+    border: none;
+    background: none;
+    color: rgb(165, 156, 135);
+    border-bottom: 2px solid rgb(165, 156, 135);
+}
+.input-sl-in::placeholder, .texto::placeholder {
     color: rgb(165, 156, 135);
     font-size: 0.9rem;
     font-family: "robotoslab-regular";
 }
-.input-sl-in:focus {
+.input-sl-in:focus, .texto:focus {
     outline: none;
     background: rgba(19, 19, 19, 0.507);
 }
-.continua {
-    width: 50%;
-    margin-bottom: 3%;
-    padding: 2%;
-    border: none;
-    color: rgb(255, 255, 255);
+.container-color {
+    flex-direction: column;
+    position: relative;
+    left: -185px;
 }
-.goog {
-    background-color: rgb(220, 80, 49);
-    margin-top: 5%;
-}
-.face {
-    background-color: rgb(37, 109, 216);
-    margin-bottom: 5%;
-}
-.fab {
-    margin-right: 2%;
+.input-color {
+    width: 42%;
+    margin: 0% 3% 0% 3%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
 }
 span {
     font-weight: bold;
@@ -175,10 +186,12 @@ span {
     text-decoration: none;
     color: rgb(129, 122, 105);
 }
-.submit, .registrate-btn {
+.parraf-contacto a {
+    color: rgb(220, 81, 49);
+}
+.submit {
     width: 50%;
     height: 2.5rem;
-    margin-top: 4%;
     font-family: "robotoslab-regular";
     background-color: rgb(165, 156, 135);
     color: rgb(19, 19, 19);
@@ -191,54 +204,17 @@ span {
     align-items: center;
     border: none;
 }
-.declaracion {
-    margin-top: 8%;
-    font-size: 0.8rem;
-    text-align: center;
-}
-.otra-opcion-container {
-    width: 30%;
-    padding: 4%;
-    background: rgba(0, 0, 0, 0.877);
-    color: rgb(165, 156, 135);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.otra-opcion {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.otra-opcion p {
-    font-size: 0.9rem;
-}
-.registrate-btn-container {
-    width: 100%;
-    display: inline-block;
-}
-.registrate-btn-container a {
-    width: 100%;
-    text-decoration: none;
-}
-.registrate-btn {
-    width: 100%;
-}
 .condiciones-container {
     width: 50%;
-    margin: 2% 0% 4% 0%;
     font-size: 0.8rem;
-}
-.inicia-btn {
     margin-bottom: 5%;
 }
-.submit:hover, .registrate-btn:hover {
+.submit:hover {
     background-color: rgb(118, 142, 93);
     cursor: pointer;
+}
+fieldset {
+    border: none;
 }
 /* FOOTER */
 footer {

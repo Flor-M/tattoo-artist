@@ -2,18 +2,11 @@ body {
     width: 100vw;
     margin: 0%;
     background-color: rgb(19, 19, 19);
+    font-family: "robotoslab-regular";
 }
 @font-face {
     font-family: "robotoslab-regular";
     src: url(./assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf)
-}
-@font-face {
-    font-family: "roboto-regular";
-    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf)
-}
-@font-face {
-    font-family: "roboto-light";
-    src: url(./assets/fonts/Roboto/Roboto-Light.ttf)
 }
 @font-face {
     font-family: "tattoo";
@@ -27,11 +20,6 @@ header {
     height: 100vh;
     background-image: url(./assets/img/welcome-studio.jpg);
 }
-.logo {
-    width: 4rem;
-    margin-left: 5%;
-    opacity: 0.5;
-}
 .nav-inicio {
     z-index: 2;
 }
@@ -42,6 +30,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#logo {
+    width: 4rem;
+    opacity: 0.5;
+}
+.nav-container a {
+    margin-left: 6%;
 }
 #menu, .icon {
     display: none;
@@ -61,7 +56,7 @@ header {
     padding-bottom: 2%;
 }
 .fa-bars {
-    color: rgb(255, 255, 255);
+    color: rgb(165, 156, 135);
     margin-right: 2rem;
     font-size: 1.5rem;
 }
@@ -78,10 +73,9 @@ header {
 .nav-list a, .nav-list-footer a, .up-footer h2 {
     text-decoration: none;
     color: rgb(165, 156, 135);
-    font-family: "robotoslab-regular";
     transition-duration: 0.3s;
 }
-.nav-list a:hover, .nav-list-footer a:hover {
+.nav-list a:hover, .nav-list-footer a:hover, .fa-bars:hover {
     cursor: pointer;
     color: rgb(118, 142, 93);
 }
@@ -101,7 +95,7 @@ header {
     height: 100%;
     width: 100%;
     background: rgb(19,19,19);
-background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0) 50%, rgba(19,19,19,0) 100%);
+    background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0) 50%, rgba(19,19,19,0) 100%);
 }
 .gradient {
     height: 100%;
@@ -162,7 +156,6 @@ main {
 h2 {
     font-size: 1rem;
     text-decoration: none;
-    font-family: "robotoslab-regular";
     padding-bottom: 0.5rem;
     margin: 0%;
     color: rgb(118, 142, 93);
@@ -200,7 +193,6 @@ h2 {
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    font-family: "robotoslab-regular";
 }
 .artista-back {
     background-color: rgba(19, 19, 19, 0.849);
@@ -210,11 +202,9 @@ h2 {
 .artista-back p {
     display: none;
     font-size: 0.9rem;
-    font-family: "robotoslab-regular";
 }
 .artista:hover .artista-back p {
     display: inline;
-    font-family: "robotoslab-regular";
     cursor: pointer;
 }
 /* COMO TRABAJAMOS */
@@ -238,7 +228,6 @@ h2 {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    font-family: "robotoslab-regular";
     color: rgb(165, 156, 135);
 }
 .como p {
@@ -255,7 +244,6 @@ h2 {
     background-color: rgb(220, 81, 49);
     color: rgb(19, 19, 19);
     border: none;
-    font-family: "robotoslab-regular";
     font-weight: bold;
     font-size: 1rem;
     transition-duration: 0.3s;
@@ -291,7 +279,6 @@ h2 {
     align-items: center;
     justify-content: space-evenly;
     color: rgb(165, 156, 135);
-    font-family: "robotoslab-regular";
 }
 .icono-pq {
     font-size: 5rem;
@@ -307,7 +294,6 @@ h2 {
     text-align: center;
 }
 .text-pq p {
-    font-family: "robotoslab-regular";
     font-size: 0.9rem;
     padding: 0% 3%;
     opacity: 0.7;
@@ -322,7 +308,6 @@ h2 {
 .faq-juntos {
     width: 60%;
     align-self: center;
-    font-family: "robotoslab-regular";
 }
 summary {
     list-style: none;
@@ -381,7 +366,6 @@ summary:hover {
     background-color: rgb(118, 142, 93);
     color: rgb(19, 19, 19);
     border: none;
-    font-family: "robotoslab-regular";
     font-weight: bold;
     font-size: 1rem;
     transition-duration: 0.3s;
@@ -390,107 +374,6 @@ summary:hover {
     background-color: rgb(101, 121, 79);
     cursor: pointer;
 }
-/* .form-consulta-container {
-    background-color: rgb(0, 0, 0);
-    padding: 1.5% 0% 4% 0%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.form-consulta {
-    color: rgb(255, 255, 255);
-    font-family: "roboto-light";
-    width: 53%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.form-consulta h4 {
-    font-family: "robotoslab-regular";
-    font-size: 1rem;
-    align-self: flex-start;
-}
-.primer-container {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.container-submit {
-    width: 100%;
-    text-align: center;
-}
-.info-form-container, .texterea-container {
-    width: 48%;
-    margin: 1%;
-}
-.container-input {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 5%;
-}
-.label-form {
-    padding-bottom: 4%;
-}
-.input-active {
-    padding: 1%;
-}
-textarea {
-    height: 6.3rem;
-}
-.porque {
-    background-color: rgba(201, 152, 73, 0.11);
-    margin: 1rem 3rem;
-    padding: 4rem 0.2rem 0.2rem 0rem;
-    height: 20rem;
-    justify-content: flex-start;
-}
-.porque p, input, textarea {
-    font-family: "roboto-regular";
-}
-.input-submit {
-    width: 98%;
-    padding: 1%;
-    margin-top: 4%;
-    border: none;
-    font-family: "robotoslab-regular";
-    font-size: 1em;
-}
-.icon-container {
-    height: 9rem;
-    width: 9rem;
-    background-color: rgba(201, 152, 73, 0.26);
-    border-radius: 50%;
-    display: flex;
-    margin-bottom: 1.2rem;
-    justify-content: center;
-    align-items: center;
-}
-.icono-porque {
-    color: rgb(201, 151, 73);
-}
-.btn-container {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    padding: 0rem 0rem 3rem 0rem;
-}
-.consulta-btn {
-    width: 40rem;
-    height: 5rem;
-    border: none;
-    font-family: "robotoslab-regular";
-    font-size: 1.5rem;
-    background-color: rgb(201, 151, 73);
-    color: rgb(255, 255, 255);
-    transition-duration: 0.3s;
-}
-.consulta-btn:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.11);
-    border: 2px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-} */
 /* FOOTER */
 footer {
     height: 40%;
@@ -524,10 +407,13 @@ footer {
     display: flex;
     flex-direction: column;
     width: 45%;
+    font-size: 0.9rem;
 }
-.logo-footer {
+#logo-footer {
     width: 4rem;
     opacity: 0.5;
+}
+.up-footer a {
     align-self: flex-start;
 }
 .titulo-footer {
@@ -536,6 +422,9 @@ footer {
 .info-list, .nav-list-footer {
     padding: 0%;
     margin: 0%;
+}
+.nav-list-footer {
+    padding-top: 9.5%;
 }
 .nav-item-footer,  .info-item-footer {
     padding-bottom: 5%;
@@ -584,6 +473,7 @@ footer {
 .freepik {
     display: flex;
 }
+/* MEDIAS */
 @media (max-width: 980px) {
     /* MEDIAS HEADER*/
     .nav-list {
