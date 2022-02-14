@@ -5,10 +5,6 @@ body {
     font-family: "robotoslab-regular";
 }
 @font-face {
-    font-family: "robotoslab-regular";
-    src: url(./assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf)
-}
-@font-face {
     font-family: "tattoo";
     src: url(./assets/fonts/Tattoo/Rooters.ttf)
 }
@@ -130,9 +126,6 @@ main {
 .ultimo {
     margin-bottom: 2%;
 }
-.labeles {
-    margin-bottom: 4%;
-}
 .input-sl-in {
     height: 1.4rem;
     padding: 2%;
@@ -167,9 +160,6 @@ main {
 }
 .fab {
     margin-right: 2%;
-}
-span {
-    font-weight: bold;
 }
 .form-container a {
     text-decoration: none;
@@ -249,6 +239,9 @@ footer {
     align-items: center;
     color: rgb(165, 156, 135);
     overflow: hidden;
+}
+span {
+    font-weight: bold;
 }
 .up-footer-back {
     width: 100%;

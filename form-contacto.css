@@ -179,9 +179,6 @@ main {
     display: flex;
     flex-direction: row;
 }
-span {
-    font-weight: bold;
-}
 .form-container a {
     text-decoration: none;
     color: rgb(129, 122, 105);
@@ -225,6 +222,9 @@ footer {
     align-items: center;
     color: rgb(165, 156, 135);
     overflow: hidden;
+}
+span {
+    font-weight: bold;
 }
 .up-footer-back {
     width: 100%;
