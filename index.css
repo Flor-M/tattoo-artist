@@ -243,7 +243,12 @@ h2 {
     border: none;
     font-weight: bold;
     font-size: 1rem;
+    font-family: "robotoslab-regular";
     transition-duration: 0.3s;
+}
+.registrate-btn-container {
+    width: 100%;
+    text-decoration: none;
 }
 .registrate-btn:hover {
     background-color: rgb(194, 71, 43);
@@ -356,8 +361,11 @@ summary:hover {
     justify-content: center;
     align-items: center;
 }
-.shop-btn {
+.shop-btn-container {
     width: 30%;
+}
+.shop-btn {
+    width: 100%;
     height: 2.5rem;
     background-color: rgb(118, 142, 93);
     color: rgb(19, 19, 19);
@@ -369,6 +377,12 @@ summary:hover {
 .shop-btn:hover {
     background-color: rgb(101, 121, 79);
     cursor: pointer;
+}
+.flex-mono {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* FOOTER */
 footer {
@@ -499,8 +513,11 @@ footer {
     .artista-back h3 {
         margin: 5% 0%;
     }
-    .nosotros-container, .pq-container, .como, .faq-container, .gallery-container {
+    .nosotros-container, .pq-container, .faq-container, .gallery-container {
         width: 80%;
+    }
+    .como, .shop-btn-container {
+        width: 50%;
     }
     .pq {
         width: 30%;
@@ -544,7 +561,7 @@ footer {
     .artista, .pq {
         margin-top: 2rem;
     }
-    .como, .shop-btn {
+    .como, .shop-btn-container {
         width: 70%;
     }
     .opacidad-falsa {
