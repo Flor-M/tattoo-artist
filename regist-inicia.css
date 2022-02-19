@@ -72,16 +72,12 @@ header {
     color: rgb(165, 156, 135);
     transition-duration: 0.3s;
 }
-.nav-list a:hover, .nav-list-footer a:hover, .fa-bars:hover {
+.nav-list a:hover, .nav-list-footer a:hover, .fa-bars:hover, .fa-user-circle:hover {
     cursor: pointer;
     color: rgb(118, 142, 93);
 }
 .fa-user-circle {
     font-size: 1.5rem;
-    color: rgb(118, 142, 93);
-}
-.fa-user-circle:hover {
-    color: rgb(165, 156, 135);
 }
 /* MAIN */
 .primer-container {
@@ -347,6 +343,20 @@ span {
     }
     .icon {
         display: inline-block;
+    }
+}
+@media (min-width:501px) and (max-width: 1280px) {
+    /* MEDIAS MAIN */
+    .iniciar-container {
+        width: 80%;
+    }
+    .container-input, .continua, .submit {
+        width: 70%;
+    }
+    /* MEDIAS FOOTER */
+    .up-footer {
+        width: 70%;
+        margin-top: 2rem;
     }
 }
 @media (max-width: 500px) {

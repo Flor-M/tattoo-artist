@@ -75,16 +75,12 @@ header {
     color: rgb(165, 156, 135);
     transition-duration: 0.3s;
 }
-.nav-list a:hover, .nav-list-footer a:hover, .fa-bars:hover {
+.nav-list a:hover, .nav-list-footer a:hover, .fa-bars:hover, .fa-user-circle:hover {
     cursor: pointer;
     color: rgb(118, 142, 93);
 }
 .fa-user-circle {
     font-size: 1.5rem;
-    color: rgb(118, 142, 93);
-}
-.fa-user-circle:hover {
-    color: rgb(165, 156, 135);
 }
 .header-img {
     width: 100vw;
@@ -158,6 +154,9 @@ h2 {
     margin: 0%;
     color: rgb(118, 142, 93);
 }
+.gallery-container a {
+    margin: 0.5%;
+}
 .gallery-img {
     height: 16.5rem;
     width: 23.3rem;
@@ -199,7 +198,6 @@ h2 {
     width: 100%;
 }
 .artista-back p {
-    display: none;
     font-size: 0.9rem;
 }
 .artista:hover .artista-back p {
@@ -260,7 +258,6 @@ h2 {
 .pq-juntos {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 4%;
 }
@@ -489,6 +486,48 @@ footer {
         height: 100%;
     }
 }
+@media (min-width:501px) and (max-width: 1280px) {
+    /* MEDIAS MAIN */
+    .gallery-img {
+        height: auto;
+    }
+    .artista {
+        width: 30%;
+        height: 25rem;
+        background-position: 35%;
+    }
+    .artista-back h3 {
+        margin: 5% 0%;
+    }
+    .nosotros-container, .pq-container, .como, .faq-container, .gallery-container {
+        width: 80%;
+    }
+    .pq {
+        width: 30%;
+        height: auto;
+    }
+    .text-pq {
+        height: 100%;
+    }
+    .faq-juntos {
+        width: 90%;
+    }
+    /* MEDIAS FOOTER */
+    .up-footer {
+        width: 70%;
+        margin-top: 2rem;
+    }
+}
+@media (min-width:975px) and (max-width: 1280px) {
+    .gallery-img {
+        width: 45rem;
+    }
+}
+@media (min-width:501px) and (max-width: 974px) {
+    .gallery-img {
+        width: 27rem;
+    }
+}
 @media (max-width: 500px) {
     /* MEDIAS MAIN */
     .logo-inicio {
@@ -500,6 +539,7 @@ footer {
     }
     .artista-container {
         margin-top: 0rem;
+        justify-content: center;
     }
     .artista, .pq {
         margin-top: 2rem;
@@ -509,6 +549,10 @@ footer {
     }
     .opacidad-falsa {
         justify-content: space-between;
+    }
+    .pq-juntos {
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .icono-pq {
         margin-top: 15%;
@@ -538,4 +582,3 @@ footer {
         margin: 1rem 0rem;
     }
 }
-@media (min-width:501px) and (max-width: 980px) {}
