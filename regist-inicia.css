@@ -1,12 +1,16 @@
+@font-face {
+    font-family: "robotoslab-regular";
+    src: url(./assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf)
+}
+@font-face {
+    font-family: "tattoo";
+    src: url(./assets/fonts/Tattoo/Rooters.ttf)
+}
 body {
     width: 100vw;
     margin: 0%;
     background-color: rgb(19, 19, 19);
     font-family: "robotoslab-regular";
-}
-@font-face {
-    font-family: "tattoo";
-    src: url(./assets/fonts/Tattoo/Rooters.ttf)
 }
 li {
     list-style: none;
@@ -19,6 +23,7 @@ header {
     width: 100vw;
     height: 11vh;
     position: fixed;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,9 +84,6 @@ header {
     color: rgb(165, 156, 135);
 }
 /* MAIN */
-main {
-    height: 89vh;
-}
 .primer-container {
     height: 100%;
     display: flex;
@@ -222,6 +224,7 @@ main {
     width: 50%;
     margin: 2% 0% 4% 0%;
     font-size: 0.8rem;
+    text-align: center;
 }
 .inicia-btn {
     margin-bottom: 5%;
@@ -342,47 +345,57 @@ span {
     }
 }
 @media (max-width: 500px) {
-    /* MEDIAS FOOTER */
-    .up-footer {
+    /* MEDIAS MAIN */
+    .iniciar-container {
         flex-direction: column;
+        width: 85%;
+    }
+    .form-container, .otra-opcion-container {
+        padding: 4% 0%;
+        width: auto;
+    }
+    .container-input {
+        width: 100%;
+        margin: 5% 0%;
+    }
+    .ultimo {
+        margin-bottom: 0%;
+    }
+    .continua, .submit {
+        width: 100%;
+    }
+    .form-container a, .recuerdame-container {
+        margin: 2%;
+    }
+    .declaracion {
+        margin: 11% 0%;
+    }
+    .condiciones-container {
+        width: auto;
+        margin: 7% 0%;
+    }
+    /* MEDIAS FOOTER */
+    footer {
+        margin-top: 12%;
+    }
+    .up-footer a {
+        align-self: auto;
+    }
+    .up-footer {
+        width: 70%;
+        margin-top: 2rem;
+    }
+    .flex-up-footer {
+        flex-direction: column;
+        align-items: flex-start;
     }
     .info-container-footer {
-        width: 80%;
-        align-items: center;
-    }
-    .info-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .info-item-footer {
-        width: 73%;
-        align-items: center;
-    }
-    .info-item-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .info-item-footer p {
-        text-align: center;
-    }
-    .info-item-footer span {
-        padding-left: 0rem;
-        margin-top: 1rem;
+        width: auto;
     }
     .nav-container-footer {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        margin: 2rem 0rem;
     }
-    .nav-list-footer {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .nav-container-footer a {
-        margin-bottom: 2rem;
+    .down-footer {
+        margin: 1rem 0rem;
     }
 }
-/* @media (min-width:501px) and (max-width: 980px) {} */
