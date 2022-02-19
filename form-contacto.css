@@ -170,7 +170,6 @@ header {
     flex-direction: column;
 }
 .input-color {
-    width: 42%;
     margin: 0% 3% 0% 3%;
     padding: 1%;
     display: flex;

@@ -300,6 +300,7 @@ span {
 }
 .info-item-footer p, .info-item-footer span {
     padding-left: 0.8rem;
+    color: rgb(165, 156, 135);
 }
 #login {
     color: rgb(220, 81, 49);
